@@ -32,7 +32,7 @@ services:
       - KAFKA_CFG_BROKER_ID=1
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093,3@kafka3:9093
       - ALLOW_PLAINTEXT_LISTENER=yes
-      - KAFKA_KRAFT_CLUSTER_ID=76BLQI7sT_ql1mBfKsOk9Q
+      - KAFKA_KRAFT_CLUSTER_ID=wgKhKz7iTay9sC-lFiIkTg
   kafka2:
     image: 'bitnami/kafka:latest'
     ports:
@@ -50,7 +50,7 @@ services:
       - KAFKA_CFG_BROKER_ID=2
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093,3@kafka3:9093
       - ALLOW_PLAINTEXT_LISTENER=yes
-      - KAFKA_KRAFT_CLUSTER_ID=76BLQI7sT_ql1mBfKsOk9Q
+      - KAFKA_KRAFT_CLUSTER_ID=wgKhKz7iTay9sC-lFiIkTg
       - BITNAMI_DEBUG=true
   kafka3:
     image: 'bitnami/kafka:latest'
@@ -69,7 +69,7 @@ services:
       - KAFKA_CFG_BROKER_ID=3
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka1:9093,2@kafka2:9093,3@kafka3:9093
       - ALLOW_PLAINTEXT_LISTENER=yes
-      - KAFKA_KRAFT_CLUSTER_ID=76BLQI7sT_ql1mBfKsOk9Q
+      - KAFKA_KRAFT_CLUSTER_ID=wgKhKz7iTay9sC-lFiIkTg
     
 volumes:
   kafkadata1:
