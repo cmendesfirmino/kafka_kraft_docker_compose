@@ -1,0 +1,1 @@
+Educational purpose repository, to teach about a creation of Kafka Cluster with KRaft rather than Zookeeper, using Docker Compose.
