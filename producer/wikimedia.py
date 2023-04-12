@@ -29,7 +29,6 @@ client = SSEClient(url)
 
 producer = KafkaProducer(bootstrap_servers=bootstrap_servers)
 
-row = 1
 for msg in client:
     outputMsg = msg.data
     if len(outputMsg) > 2:
