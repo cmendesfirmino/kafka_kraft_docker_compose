@@ -4,7 +4,7 @@ from sseclient import SSEClient
 from kafka import KafkaProducer
 from kafka.admin import KafkaAdminClient, NewTopic
 
-bootstrap_servers = ['localhost:29192','localhost:29292','localhost:29392']
+bootstrap_servers = ['localhost:19090', 'localhost:19091', 'localhost:19092']
 
 kafka_client = KafkaAdminClient(
     bootstrap_servers=bootstrap_servers,
@@ -34,4 +34,5 @@ for msg in client:
     outputMsg = msg.data
     if len(outputMsg) > 2:
         outputJS = json.loads(outputMsg)
+        print("Send ", outputJS)
         producer.send(topic=topic, value=json.dumps(outputJS).encode())
